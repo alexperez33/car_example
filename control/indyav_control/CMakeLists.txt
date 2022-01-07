@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 project(indyav_control)
 
 find_package(catkin REQUIRED
@@ -64,9 +64,6 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(simulated_steering_driver
   src/simulated_steering_driver.cpp)
-add_dependencies(simulated_steering_driver
-  std_msgs
-  ${catkin_EXPORTED_TARGETS})
 target_link_libraries(simulated_steering_driver
   ${catkin_LIBRARIES})
 add_executable(joy_teleop 

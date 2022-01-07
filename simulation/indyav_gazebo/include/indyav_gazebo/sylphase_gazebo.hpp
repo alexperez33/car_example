@@ -10,7 +10,6 @@
 #include "gazebo/common/common.hh"
 #include "gazebo/physics/physics.hh"
 #include "gazebo/sensors/sensors.hh"
-#include "roboteq_msgs/Command.h"
 
 namespace navigator_gazebo
 {
